@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            li {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            List
+            <li style="color:blue;">Item 1</li>
+            <li>Item 2</li>
+            <li id="unique-li">ID</li>
+            <li class="warning">warning1</li>
+            <li>Item 2</li>
+            <li class="warning error">warning2 is brown</li>
+            <li>Item 2</li>
+            <li class="warning">warning3</li>
+            <li>Item 2</li>
+            <li attribute-name>attribute1</li>
+            <li attribute-name="attribute-value">attribute2 has the matching value</li>
+            <li class="warning" attribute-name>attribute3 with class</li>
+        </ul>
+        <ul class="parent-child">
+            Parent
+            <li>Child1</li>
+            <li>Child2</li>
+            <li>Child3</li>
+            <li>
+                <ul>
+                    Grandchild
+                    <li>
+                        Great-Grandchild
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="ancestor-descendant">
+            Ancestor
+            <li>Descendant1</li>
+            <li>Descendant2</li>
+            <li>Descendant3</li>
+            <li>
+                <ul>
+                    Grandchild
+                    <li>
+                        Great-Grandchild
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+        <p>paragraph3</p>
+    </body>
+</html>
