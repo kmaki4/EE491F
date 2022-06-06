@@ -1,0 +1,47 @@
+li, p {
+    color: Green;
+}
+
+#unique-li {
+    color: yellow;
+}
+
+.warning {
+    color: orange;
+}
+
+.warning.error, .warning[attribute-name] {
+    color: brown;
+}
+
+[attribute-name] {
+    color: gray;
+}
+
+[attribute-name="attribute-value"] {
+    color: purple;
+}
+
+.parent-child > li {
+    color: pink;
+}
+
+.ancestor-descendant li {
+    color: aqua;
+}
+
+.main {
+    font-size: 120%;
+    color: red;
+}
+
+div {
+    border: solid .1em black;
+    margin: .1em;
+    padding: .1em;
+    font-size: 40px;
+}
+
+div div {
+    background-color: aqua;
+}
