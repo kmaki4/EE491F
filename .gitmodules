@@ -1,0 +1,9 @@
+[submodule "django_with_containers"]
+	path = django_with_containers
+	url = https://github.com/kmaki4/EE491F
+[submodule "Django_Data_Querying"]
+	path = Django_Data_Querying
+	url = https://github.com/kmaki4/EE491F
+[submodule "Django_New_Application_Assignment"]
+	path = Django_New_Application_Assignment
+	url = https://github.com/kmaki4/EE491F
