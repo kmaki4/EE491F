@@ -1,17 +1,10 @@
 {% extends 'blogs/base.html' %}
+{% block create %}{% endblock %}
 {% block content %}
+<a href="{% url 'blogs:index' %}">
+    <input type="button" value="Home">
+</a>
 {% if blog_list %}
-    <a href="{% url 'blogs:Filter' %}">
-        <input type="button" value="Filter by the word &quot;title&quot;">
-    </a>
-    <br>
-    <a href="{% url 'blogs:Order' %}">
-        <input type="button" value="Order by Newest Date">
-    </a>
-    <br>
-    <a href="{% url 'blogs:FilterOrder' %}">
-        <input type="button" value="Filter by the word &quot;title&quot; and ordered by name alphabetically">
-    </a>
     {% for blog in blog_list %}
         <article class="post">
             <time class="date">
