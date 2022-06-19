@@ -54,7 +54,7 @@ def vote(request, question_id):
 class CreateView(generic.edit.CreateView):
     template_name = 'polls/create.html'
     model = Question
-    fields = ['message']
+    fields = ['question_text']
     success_url = reverse_lazy('polls:index') # more robust than hardcoding to /greetings/; directs user to index view after creating a greeting
 
 class UpdateView(generic.edit.UpdateView):

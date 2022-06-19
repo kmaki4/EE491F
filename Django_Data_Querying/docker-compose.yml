@@ -12,7 +12,7 @@ services:
       - database.env
 
   database:
-    image: postgres:14.3
+    image: "postgres"
     env_file:
       - database.env
     volumes:

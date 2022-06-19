@@ -1,0 +1,9 @@
+<p>Movie Name: {{ movie.movie }}</p>
+<p>Release Date: {{ movie.release_date }}<br></p>
+<p>Genre: {{ movie.genre }}<br></p>
+<a href="{% url 'movies:update' pk=movie.pk %}">
+    <input type="button" value="Update/Edit the Post!">
+</a>
+<a href="{% url 'movies:index' %}">
+    <input type="button" value="Home">
+</a>

@@ -1,0 +1,16 @@
+{% load static %}
+<head>>
+    {% block title %}{{ title }} | {{ site_title|default:_('NEW TITLE') }}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="{% url 'polls:index' %}">Home</a></li>
+            <li><a href="{% url 'polls:create' %}">Create</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        {% block main %}{% endblock %}
+    </div>
+</body>

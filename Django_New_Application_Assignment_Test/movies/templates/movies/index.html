@@ -1,0 +1,14 @@
+{% load static %}
+<p>List of favorite TV shows/movies:<br></p>
+{% if movie_list %}
+    <ul>
+    {% for movie in movie_list %}
+        <li>
+            <a href="{% url 'movies:view' pk=movie.pk %}">{{ movie.movie }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No movies are available.</p>
+{% endif %}
+<span><a href="{% url 'movies:create' %}">Click to add a New TV show/movie to the list<br></a></span>
